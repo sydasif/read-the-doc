@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Test Doc Notebook'
+project = 'Docs Notebook'
 copyright = '2022, Syed Asif'
 author = 'Syed Asif'
 release = '1.0'
