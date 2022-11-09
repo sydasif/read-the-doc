@@ -7,9 +7,9 @@
 :relative-images:
 ```
 
-See my Configuration file {doc}`link/my-conf-file`.
+See my {doc}`link/my-conf-file`.
 
-See my index file {ref}`Index file` for refrence.
+See my {ref}`Index file` for refrence.
 
 ```{warning}
 This is a test project to create documentaion.
