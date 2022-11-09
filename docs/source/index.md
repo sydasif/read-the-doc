@@ -15,7 +15,7 @@ This is a test project to create documentaion.
 ```
 
 ```{toctree}
-:caption: 'Contents:'
+:caption: 'Table of Contents:'
 :maxdepth: 2
 
 Installing Sphinx <sphinx>
