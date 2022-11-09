@@ -66,4 +66,4 @@ Build them to see how they look:
 make html
 ```
 
-Your index.md has been built into index.html in your documentation output directory. Open this file in your web browser to see your docs.
+Your index.md has been built into index.html in your documentation output directory. Open index.html (build/html/index.html) file in your web browser to see your docs.
