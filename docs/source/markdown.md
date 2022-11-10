@@ -38,25 +38,51 @@ extensions = ["myst_parser"]
 
 This will activate the MyST Parser extension, causing all documents with the *.md* extension to be parsed as MyST.
 
-Now, edit your *index.md* and add some information about your project.
+Now, edit your *index.md* file and add some information about your project.
+
+Add below line to include README.md file:
 
 ```console
-    % read the doc documentation master file, created by
-    % sphinx-quickstart on Wed Nov  9 10:13:01 2022.
-    % You can adapt this file completely to your liking, but it should at least
-    % contain the root `toctree` directive.
+    ```{include} ../../README.md
+    :relative-images:
+    ```
+```
 
+Add warning for project:
+
+```console
+    ```{warning}
+    This is a test project.
+    ```
+```
+
+Update your toctree:
+
+```console
+    ```{toctree}
+    :caption: 'Table of Contents:'
+    :maxdepth: 2
+
+    Installing Sphinx <sphinx>
+    Markdown with Sphinx <markdown>
+    Index file <link/my-index-file>
+    Configuration file <link/my-conf-file>
+    ```
+```
+
+Add ref/link as below:
+
+```console
     ```{include} ../../README.md
     :relative-images:
     ```
 
-    ```{warning}
-    This is a test project.
-    ```
+    See my {doc}`link/my-conf-file`.
 
-    ```{toctree}
-    :caption: 'Contents:'
-    :maxdepth: 2
+    See my {ref}`Index file` for refrence.
+
+    ```{warning}
+    This is a test project to create documentaion.
     ```
 ```
 
