@@ -1,10 +1,10 @@
 # Markdown with Sphinx
 
-You can use *Markdown using MyST* Sphinx project.
+You can use *Markdown using MyST* in the Sphinx project.
 
 ## [RST-to-MyST](https://rst-to-myst.readthedocs.io/en/latest/)
 
-A tool for converting ReStructuredText to MyST Markdown. We will convert *.rst* file into *.md* extension.
+A tool for converting ReStructuredText to MyST Markdown. this tool convert the *.rst* file into *.md* extension.
 
 To install from PyPI:
 
@@ -12,17 +12,17 @@ To install from PyPI:
 pip install "rst-to-myst[sphinx]"
 ```
 
-To then run a basic conversion of a whole project:
+Basic conversion command of a whole project:
 
 ```console
 rst2myst convert docs/**/*.rst
 ```
 
-The above command has convert the index.rst into index.md, now delete index.rst from your poject.
+The above command has converted the index.rst into an index.md, now delete index.rst from your project.
 
 ## [Myst-Parser](https://myst-parser.readthedocs.io/en/latest/intro.html)
 
-This page describes how to get started with the MyST parser, with a focus on enabling it in the Sphinx documentation engine.
+To get started with the MyST parser, with a focus on enabling it in the Sphinx documentation engine.
 
 To install use pip:
 
@@ -38,10 +38,10 @@ extensions = ["myst_parser"]
 
 This will activate the MyST Parser extension, causing all documents with the *.md* extension to be parsed as MyST.
 
-Now, edit your *index.md* and add some information about your project. 
+Now, edit your *index.md* and add some information about your project.
 
 ```console
-    % ansible notebook documentation master file, created by
+    % read the doc documentation master file, created by
     % sphinx-quickstart on Wed Nov  9 10:13:01 2022.
     % You can adapt this file completely to your liking, but it should at least
     % contain the root `toctree` directive.
@@ -51,7 +51,7 @@ Now, edit your *index.md* and add some information about your project.
     ```
 
     ```{warning}
-    This is a test repo for learning
+    This is a test project.
     ```
 
     ```{toctree}
@@ -66,4 +66,4 @@ Build them to see how they look:
 make html
 ```
 
-Your index.md has been built into index.html in your documentation output directory. Open index.html (build/html/index.html) file in your web browser to see your docs.
+Your index.md has been built into index.html in your documentation output directory (build/html/index.html). Open the index.html file in your web browser to see your docs.
